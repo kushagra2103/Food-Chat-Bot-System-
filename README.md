@@ -41,4 +41,20 @@ Now for every intent certain key words are provided in the training so that if d
 
 ![Capture2](https://user-images.githubusercontent.com/36281158/89034360-6a29e480-d356-11ea-8e02-a59f84de0957.PNG)
 
+Here "cuisine" and "location" are the entities defined. These information will be used further. 
 
+All the intents and theie keywords are stored in a file called "nlu_data.md" 
+
+Following are the intents
+
+- goodbye 
+
+- greet
+
+- thanks
+
+- affirm
+
+- deny
+
+- restaurant_search
