@@ -88,4 +88,3 @@ Templates: These are the texts which the bot which display to the user
 
 ![Capture5](https://user-images.githubusercontent.com/36281158/89043914-dc0a2a00-d366-11ea-9c9f-b735c79f7e28.PNG)
 
-
