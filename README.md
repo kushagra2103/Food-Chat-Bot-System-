@@ -65,5 +65,27 @@ There is also a NLU config file for preprocessing and finding intents and enitit
 
 We use sklearn spacy pipeline as it is recommended as it has a pretrained GLOVE vector embedding feature and works really well for small training examples. 
  
+#### RASA Core 
+
+It is the dialogue management system of the chatbot. It makes the conversation live by asking the user relevant questions based on the contextual inforamtion from the user. 
+
+It has following parts.
+
+1. Storyline 
+
+![Capture4](https://user-images.githubusercontent.com/36281158/89043461-23dc8180-d366-11ea-8a88-503d4ea95d6d.PNG)
+
+It basically what are the various path the conversation can take place
+
+2. Domain
+
+It basically has all the information about the intents, actions, entities , slots, templates
+
+Slots: They acts as a memory for the bot. If the user specifies location and cuisine in the text, it will store that data that can be used further 
+
+Templates: These are the texts which the bot which display to the user 
+
+
+![Capture5](https://user-images.githubusercontent.com/36281158/89043914-dc0a2a00-d366-11ea-9c9f-b735c79f7e28.PNG)
 
 
