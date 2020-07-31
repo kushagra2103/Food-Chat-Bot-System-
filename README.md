@@ -26,3 +26,6 @@ Take feedback and start again if needed.
 ![Capture](https://user-images.githubusercontent.com/36281158/89032872-326d6d80-d353-11ea-904e-05c4402abb11.PNG)
 
 
+### Explaination:
+
+Here the user sends message " What are good some biryani places in chennai". Now first it go throughs RASA NLU which finds out what the user is looking for (restaurant search) and what other details the user provided (biryani, chennai). Then this inforamtion is stored and relevant details are retrieved from ZOMATO through an API. RASA Core is a dialogue management system which tries to engage the user by asking relevant questions like did it help, goodbye, etc. 
