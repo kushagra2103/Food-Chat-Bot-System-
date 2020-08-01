@@ -1,0 +1,816 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "goodbye",
+        "text": "Bye-bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Farewell"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Cheerio"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "I’m out"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Take care"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Gotta go!"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Good night"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Keep in touch"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you soon"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you next time"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Have a good (nice) day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "goodbye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "goodbye",
+        "text": "finish"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal"
+      },
+      {
+        "intent": "greet",
+        "text": "anybody there"
+      },
+      {
+        "intent": "greet",
+        "text": "who are you"
+      },
+      {
+        "intent": "greet",
+        "text": "what are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hi robot"
+      },
+      {
+        "intent": "greet",
+        "text": "hey robot"
+      },
+      {
+        "intent": "greet",
+        "text": "hi mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hello mister"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thanks",
+        "text": "alright"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks friend"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks pal"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks robot"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers !"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "thanks",
+        "text": "yes, thanks !"
+      },
+      {
+        "intent": "thanks",
+        "text": "amazing, thanks !"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "affirm",
+        "text": "y"
+      },
+      {
+        "intent": "affirm",
+        "text": "Y"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "yeah"
+      },
+      {
+        "intent": "affirm",
+        "text": "right"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes right"
+      },
+      {
+        "intent": "affirm",
+        "text": "it is right"
+      },
+      {
+        "intent": "affirm",
+        "text": "correct"
+      },
+      {
+        "intent": "affirm",
+        "text": "it is correct"
+      },
+      {
+        "intent": "affirm",
+        "text": "correct right"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definetly"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "never"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't think so"
+      },
+      {
+        "intent": "deny",
+        "text": "not"
+      },
+      {
+        "intent": "deny",
+        "text": "it is not"
+      },
+      {
+        "intent": "deny",
+        "text": "wrong"
+      },
+      {
+        "intent": "deny",
+        "text": "it is wrong"
+      },
+      {
+        "intent": "deny",
+        "text": "not correct"
+      },
+      {
+        "intent": "deny",
+        "text": "it is not correct"
+      },
+      {
+        "intent": "deny",
+        "text": "nope"
+      },
+      {
+        "intent": "deny",
+        "text": "nopes"
+      },
+      {
+        "intent": "deny",
+        "text": "it is not right"
+      },
+      {
+        "intent": "deny",
+        "text": "n"
+      },
+      {
+        "intent": "deny",
+        "text": "N"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "i'm looking for a place to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I want to grab a lunch"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am searching for a dinner spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "north",
+            "entity": "location"
+          }
+        ],
+        "text": "i'm looking for a place in the north of town"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "show me chinese restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "centre",
+            "entity": "location"
+          }
+        ],
+        "text": "show me a mexican place in the centre"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i am looking for an indian spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "search for restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "west",
+            "entity": "location"
+          }
+        ],
+        "text": "anywhere in the west"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "18328",
+            "entity": "location"
+          }
+        ],
+        "text": "anywhere near 18328"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "asian fusion",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for asian fusion food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "29432",
+            "entity": "location"
+          }
+        ],
+        "text": "I am looking a restaurant in 29432"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am hungry"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "Can you tell me a place to eat?"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I need food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "Food near delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "Food near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "cafe near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "paris",
+            "entity": "location"
+          }
+        ],
+        "text": "what are some good restraunts in paris"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "suggest me some good chinese place"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "suggest me a good place to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "mughlai",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "where can i get best mughlai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "burger",
+            "entity": "cuisine"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "tokyo",
+            "entity": "location"
+          }
+        ],
+        "text": "where can I find best burger in tokyo?"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "biryani",
+            "entity": "cuisine"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "best biryani in hyderabad?"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "pasta",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i want to eat pasta"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "burgers",
+            "entity": "cuisine"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "best burgers in delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "pizza",
+            "entity": "cuisine"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "what are the best pizza in delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "sushi",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i feel like having sushi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "biryani",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i would like to have some biryani"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "pizza",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "best pizza near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "i am feeling hungry"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "burger",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "tell me the nearest burger place"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "sandwich",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i want a sandwich"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "pizza",
+            "entity": "cuisine"
+          },
+          {
+            "start": 25,
+            "end": 32,
+            "value": "chennai",
+            "entity": "location"
+          }
+        ],
+        "text": "where can i get pizza in chennai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 39,
+            "value": "continental",
+            "entity": "cuisine"
+          },
+          {
+            "start": 49,
+            "end": 55,
+            "value": "mysore",
+            "entity": "location"
+          }
+        ],
+        "text": "can you recommend some good continental place in mysore"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "pasta",
+            "entity": "cuisine"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "chennai",
+            "entity": "location"
+          }
+        ],
+        "text": "Actually, I want to eat pasta in chennai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "biryani",
+            "entity": "cuisine"
+          },
+          {
+            "start": 38,
+            "end": 45,
+            "value": "chennai",
+            "entity": "location"
+          }
+        ],
+        "text": "can you suggest good biryani place in chennai?"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "dosa",
+            "entity": "cuisine"
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "value": "gurugram",
+            "entity": "location"
+          }
+        ],
+        "text": "dosa in gurugram"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "dosa",
+            "entity": "cuisine"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "value": "gurgaon",
+            "entity": "location"
+          }
+        ],
+        "text": "dosa in gurgaon"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "Jaipur",
+            "entity": "location"
+          }
+        ],
+        "text": "best cafes in Jaipur"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "nice food outlets near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "nice cafes around"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [
+      {
+        "name": "location",
+        "elements": "data/locations.txt"
+      },
+      {
+        "name": "cuisine",
+        "elements": "data/cuisines.txt"
+      }
+    ],
+    "entity_synonyms": []
+  }
+}
