@@ -69,9 +69,11 @@ We use sklearn spacy pipeline as it is recommended as it has a pretrained GLOVE 
 
 For training the nlu model following command is used :
 
-*python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
+Only the nlu_data.md and nlu_config files are used for training.
 
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
 
+Here, rasa_nlu train model is used, nlu_config file which contains piplines to be used for, data is taken from data.md filw which contains intents and entities and the model is saved in "models" folder with the name "nlu" -> "current". Every time the model is trained with some changes in the training data, it will overwrite the previos one. 
  
  
  
