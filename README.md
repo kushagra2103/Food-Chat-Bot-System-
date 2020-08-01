@@ -136,5 +136,11 @@ Keras Policy: Number of epochs= 100 and max_history =5
 
 As we can see the model is trained. By default it is one LSTM layer, one dense layer and an activation layer. 
 
+To talk to the chatbot, we can run the below command
 
+python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
+
+![Capture10](https://user-images.githubusercontent.com/36281158/89105782-d5041a00-d441-11ea-892d-1d72ae1d5b80.PNG)
+
+Above is the snippet which displays the top 5 results on being asked for places to eat pizza in jaipur. 
 
