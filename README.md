@@ -118,5 +118,21 @@ Templates: These are the texts which the bot which display to the user
 
 ![Capture5](https://user-images.githubusercontent.com/36281158/89043914-dc0a2a00-d366-11ea-9c9f-b735c79f7e28.PNG)
 
+##### Training 
+
+For training purposes, stories.md, policies.yml, and domain.py files will be used 
+python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c policies.yml
+
+A little abput Policy:
+
+![Capture9](https://user-images.githubusercontent.com/36281158/89104004-a121f800-d433-11ea-9c64-9e5c5ad19dce.PNG)
+
+Keras Policy: Number of epochs= 100 and max_history =5 
+
+![Capture8](https://user-images.githubusercontent.com/36281158/89103893-f14c8a80-d432-11ea-90ec-8b634f5f9fdd.PNG)
+
+
+As we can see the model is trained. By default it is one LSTM layer, one dense layer and an activation layer. 
+
 
 
