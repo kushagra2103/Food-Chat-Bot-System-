@@ -123,7 +123,9 @@ Templates: These are the texts which the bot which display to the user
 For training purposes, stories.md, policies.yml, and domain.py files will be used 
 python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c policies.yml
 
-A little abput Policy:
+A little about Policy:
+The rasa core policies decide which action to take at every step in the conversation. There are different policies to choose from, and one can include multiple policies in a single rasa core Agent but at every turn, the policy which predicts the next action with the highest confidence will be used. The fallback policy comes in to picture when ‘nlu_threshold’ & ‘core_threshold’ meets the levels defined in the policy which means that bot is not able to understand the user message and it responds with ‘utter_default’.
+
 
 ![Capture9](https://user-images.githubusercontent.com/36281158/89104004-a121f800-d433-11ea-9c64-9e5c5ad19dce.PNG)
 
