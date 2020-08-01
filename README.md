@@ -64,6 +64,17 @@ There is also a NLU config file for preprocessing and finding intents and enitit
 ![Capture3](https://user-images.githubusercontent.com/36281158/89036846-1372d980-d35b-11ea-9065-99f57d0e40c0.PNG)
 
 We use sklearn spacy pipeline as it is recommended as it has a pretrained GLOVE vector embedding feature and works really well for small training examples. 
+
+##### Training 
+
+For training the nlu model following command is used :
+
+*python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
+
+
+ 
+ 
+ 
  
 #### RASA Core 
 
