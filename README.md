@@ -75,8 +75,25 @@ python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --f
 
 Here, rasa_nlu train model is used, nlu_config file which contains piplines to be used for, data is taken from data.md filw which contains intents and entities and the model is saved in "models" folder with the name "nlu" -> "current". Every time the model is trained with some changes in the training data, it will overwrite the previos one. 
  
+![Capture6](https://user-images.githubusercontent.com/36281158/89103016-41741e80-d42c-11ea-87ec-882852c04f11.PNG)
+
+Now the model is trained, by following commands, when we send the message " places to eat pizza in jaipur", we get the result as shown below
+
+Opening python interpreter,
+
+>>from rasa_nlu.model import Interpreter
+>>nlu_model = Interpreter.load("./models/current/nlu")
+
+Sending the above message through parse function, 
+
+>>nlu_model.parse("places to eat pizza in jaipur")
  
- 
+Result: 
+
+![Capture7](https://user-images.githubusercontent.com/36281158/89103199-a1b79000-d42d-11ea-82c9-5cb64f5df196.PNG)
+
+Above we can se the intenet was identified as "restaurant_search" with over 80 % confidence and "location" and "cuisine" are identified as entities. Alos for every intent it gives the confidence score as well
+
  
 #### RASA Core 
 
