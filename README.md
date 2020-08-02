@@ -94,5 +94,14 @@ Templates: The text that will be replied back to the user.
 ![Capture4](https://user-images.githubusercontent.com/36281158/89123796-beb49780-d4ef-11ea-8782-d88b8087f7c1.PNG)
 ![Capture12](https://user-images.githubusercontent.com/36281158/89123806-d1c76780-d4ef-11ea-8d3b-7c5fb9f003bd.PNG)
 
+##### policy.yml :Decides which action to take at every step in the conversation
 
+![Capture9](https://user-images.githubusercontent.com/36281158/89124466-ca568d00-d4f4-11ea-99c8-317612296cb2.PNG)
 
+Keras Policy: Uses a neural network implemented in Keras to select the next action. The default architecture is based on an LSTM but can be modified by editing the keras_policy.py file. 
+
+Twoe variables; epochs and max_history
+
+Epochs: Number of forward and backward pass through the entire training data 
+
+Max_history: number of conversation in previous time to decide what to reply next to the user. In short keeping the context of the conversation. 
