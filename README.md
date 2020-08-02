@@ -4,6 +4,8 @@
 
 Developed a chat bot system which will generate top restaurants for a particular cuisine and location. It is based on RASA framework. Zomato API is used for search results to be displayed to the user and is deployed on the Slack platform using ngrok application. 
 
+Note: Rasa environment is created in anaconda. 
+
 ## Overview of RASA Framework 
 
 
@@ -53,6 +55,22 @@ ner_synonyms: For different messages, if the intent is same although asked in a 
 intent_classifier_sklearn: Classifies the intent using linear SVM model and ranks them according the confidence score. Outputs intent and intent ranking 
 
 
+#### Training 
+
+Following commands are used for traning the model.
+
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
+
+Here the model is trained using nlu_config.yml, picking up the data from data/data.md , fixed means everytime the model is trained it will overwrite the previos one and will be named as "nlu" in the project named as "current" directory. 
+
+Example: Places to eat pizza in jaipur 
+
+Following result is displayed. 
+
+![Capture7](https://user-images.githubusercontent.com/36281158/89124238-0ee12900-d4f3-11ea-863e-cf950934d7f4.PNG)
+
+Here we can see that the intent is identified as "restaurant_search" and entities as "location: jaipur" and "cuisine: pizza"
+
 
 ### RASA Core
 
@@ -60,7 +78,7 @@ It can be thought of as dialogue management system. It decides what actions need
 
 For training the model domain.yml, stories.md and policy.yml files are needed .
 
-Domain.yml: It contains the all the things the bot should know. 
+##### Domain.yml: It contains the all the things the bot should know. 
 
 Slots: Acts as bot memory. Store the useful information like location, cuisine from the query sent by the user.
 
@@ -69,5 +87,12 @@ Actions: What action needs to be taken next.
 Templates: The text that will be replied back to the user.
 
 ![Capture5](https://user-images.githubusercontent.com/36281158/89123767-7f864680-d4ef-11ea-8260-38f5d651a012.PNG)
+
+
+##### Stories.yml: It contains paths that the conversation can takes place. More you defined the paths, more the better. 
+
+![Capture4](https://user-images.githubusercontent.com/36281158/89123796-beb49780-d4ef-11ea-8782-d88b8087f7c1.PNG)
+![Capture12](https://user-images.githubusercontent.com/36281158/89123806-d1c76780-d4ef-11ea-8d3b-7c5fb9f003bd.PNG)
+
 
 
