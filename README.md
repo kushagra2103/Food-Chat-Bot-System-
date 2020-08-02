@@ -100,8 +100,33 @@ Templates: The text that will be replied back to the user.
 
 Keras Policy: Uses a neural network implemented in Keras to select the next action. The default architecture is based on an LSTM but can be modified by editing the keras_policy.py file. 
 
-Twoe variables; epochs and max_history
+Two variables; epochs and max_history
 
 Epochs: Number of forward and backward pass through the entire training data 
 
 Max_history: number of conversation in previous time to decide what to reply next to the user. In short keeping the context of the conversation. 
+
+
+Memorization Policy: The MemoizationPolicy just memorizes the conversations in your training data. It predicts the next action with confidence 1.0 if this exact conversation exists in the training data, otherwise it predicts None with confidence 0.0
+
+FallbackPolicy: It basically is a policy if the nlu_threshold or core_threshold confidence score are below 0.3, then an default action (eg.  "Soory I didn't get that" will be replied back to the user) will take place.
+
+#### Training 
+
+For training the model, following commands are used 
+
+python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c policies.yml
+
+![Capture8](https://user-images.githubusercontent.com/36281158/89125171-17892d80-d4fa-11ea-9134-b1625c8ffe13.PNG)
+
+![Capture9](https://user-images.githubusercontent.com/36281158/89125168-10fab600-d4fa-11ea-9888-5a6f83ad6558.PNG)
+
+![Capture10](https://user-images.githubusercontent.com/36281158/89125174-18ba5a80-d4fa-11ea-958b-40261b321e4a.PNG)
+
+
+
+
+
+
+
+
