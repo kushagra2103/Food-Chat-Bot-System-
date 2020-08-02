@@ -119,7 +119,6 @@ python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dia
 
 ![Capture8](https://user-images.githubusercontent.com/36281158/89125171-17892d80-d4fa-11ea-9134-b1625c8ffe13.PNG)
 
-![Capture9](https://user-images.githubusercontent.com/36281158/89125168-10fab600-d4fa-11ea-9888-5a6f83ad6558.PNG)
 
 ![Capture10](https://user-images.githubusercontent.com/36281158/89125174-18ba5a80-d4fa-11ea-958b-40261b321e4a.PNG)
 
