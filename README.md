@@ -125,7 +125,9 @@ python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dia
 
 On asking for places to eat pizza in jaipur, it displays the top 5 restaurants 
 
-Deployment over Slack platform 
+### Deployment over Slack platform 
+
+ngrok is used as it acts as a tunnel for our local host machine to the internet. So any information that over the slack user provides it go through ngrok then through our RASA core and make necessary predictions and those predictions are displayed over the slack. Webhook is used to connect two applications (Slack and RASA model). It helps in delivering real time information to and from the user .  
 
 Steps done are as follows.
 
@@ -143,27 +145,26 @@ Steps done are as follows.
 
 7. Start the action server
 
-  make action-server
+   python -m rasa_core_sdk.endpoint --actions actions
   
-8.  Deploy action server on the internet
+8.  Deploy action server on the internet, here on running the action server we will get our port number (5055)
 
     ngrok http 5055
 
 9. Activate the rasa environment
 
-  conda activate rasa
+   conda activate rasa
 
 10.  Start the rasa core server:
 
-python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5002
---connector slack --credentials slack_credentials.yml --endpoints endpoints.yml
+   python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5002 --connector slack --credentials slack_credentials.yml --endpoints endpoints.yml
 
 11. Deploy rasa core server on the internet: 
-     ngrok http 5002
+   ngrok http 5002
 
 12. Attach the url got by running ngrok in previous step by going to "Event subscription tab" on the left side in slack and attach the url followed by "/webhooks/slack/webhook"
 
-13 Go to your workspace and check the bot is running properly or not
+13 Go to your workspace and see the foodbot is present. Yu can add extra features to your bot like its desciption, showing it online all the time.
 
 ![Capture11](https://user-images.githubusercontent.com/36281158/89129326-2d0e4f80-d51a-11ea-9328-184e58ef72f4.PNG)
 
