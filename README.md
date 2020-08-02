@@ -52,3 +52,22 @@ ner_synonyms: For different messages, if the intent is same although asked in a 
 
 intent_classifier_sklearn: Classifies the intent using linear SVM model and ranks them according the confidence score. Outputs intent and intent ranking 
 
+
+
+### RASA Core
+
+It can be thought of as dialogue management system. It decides what actions needed to be taken and what message to be replied back to the user.
+
+For training the model domain.yml, stories.md and policy.yml files are needed .
+
+Domain.yml: It contains the all the things the bot should know. 
+
+Slots: Acts as bot memory. Store the useful information like location, cuisine from the query sent by the user.
+
+Actions: What action needs to be taken next.
+
+Templates: The text that will be replied back to the user.
+
+![Capture5](https://user-images.githubusercontent.com/36281158/89123767-7f864680-d4ef-11ea-8260-38f5d651a012.PNG)
+
+
