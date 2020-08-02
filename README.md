@@ -125,6 +125,47 @@ python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dia
 
 On asking for places to eat pizza in jaipur, it displays the top 5 restaurants 
 
+Deployment over Slack platform 
+
+Steps done are as follows.
+
+1. Go to the https://api.slack.com/apps
+
+2. Login your workspace and go to "create an app"
+
+3. Add a name to your bot and workspace you want your chatbot to install in.
+
+4. To install it , you have to ad features to your bot, got to "Bot" tab in "Add features and functionality tab"
+
+5. There you can add features according to your choice, go to OAuth & Permissions, under scopes for both bot token scopes and user token scopes, add relevant functionality and save the changes
+
+6. Click on install the app, it will generate Bot User OAuth Access Token, which will be used in slack credentials file 
+
+7. Start the action server
+
+  make action-server
+  
+8.  Deploy action server on the internet
+
+    ngrok http 5055
+
+9. Activate the rasa environment
+
+  conda activate rasa
+
+10.  Start the rasa core server:
+
+python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5002
+--connector slack --credentials slack_credentials.yml --endpoints endpoints.yml
+
+11. Deploy rasa core server on the internet: 
+     ngrok http 5002
+
+12. Attach the url got by running ngrok in previous step by going to "Event subscription tab" on the left side in slack and attach the url followed by "/webhooks/slack/webhook"
+
+13 Go to your workspace and check the bot is running properly or not
+
+![Capture11](https://user-images.githubusercontent.com/36281158/89129326-2d0e4f80-d51a-11ea-9328-184e58ef72f4.PNG)
 
 
 
