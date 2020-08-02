@@ -123,6 +123,10 @@ python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dia
 ![Capture10](https://user-images.githubusercontent.com/36281158/89125174-18ba5a80-d4fa-11ea-958b-40261b321e4a.PNG)
 
 
+On asking for places to eat pizza in jaipur, it displays the top 5 restaurants 
+
+
+
 
 
 
