@@ -69,7 +69,7 @@ Following result is displayed.
 
 ![Capture7](https://user-images.githubusercontent.com/36281158/89124238-0ee12900-d4f3-11ea-863e-cf950934d7f4.PNG)
 
-Here we can see that the intent is identified as "restaurant_search" and entities as "location: jaipur" and "cuisine: pizza"
+Here we can see that the intent is identified as "restaurant_search" and entities as "location: jaipur" and "cuisine: pizza". Intent is identified with confidence score of 0.8 which is good and similarly entities with theri values "location: jaipur" and "cuisine:pizza" are identified. Also for every intent we can see ranking of confidence score.
 
 
 ### RASA Core
@@ -124,6 +124,9 @@ python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dia
 
 
 On asking for places to eat pizza in jaipur, it displays the top 5 restaurants 
+
+
+
 
 
 
