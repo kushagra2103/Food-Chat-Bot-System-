@@ -170,6 +170,11 @@ Steps done are as follows.
 
 
 
+### Features that can be added to the bot 
+
+1. Category: In Zomato API, there is category section similarly to the location . Here various categories are defined such as Delievery, Takeaway, nightlife. For more customization, while picking location and cuisine, category can also be pciked up and it will filter the results according to the category given by the user. 
+
+2. Timings : We can also the display the timings of a particular restaurant is opened by extracting the "timings" from the restaurant details 
 
 
 
