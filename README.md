@@ -177,7 +177,9 @@ Steps done are as follows.
 2. Timings : We can also the display the timings of a particular restaurant is opened by extracting the "timings" from the restaurant details 
 
 
+PS: For deep dive behind the scenes, here is the paper that may be useful to understand what's going on inside 
 
+https://www.ijeat.org/wp-content/uploads/papers/v8i5S/E10130585S19.pdf
 
 
 
