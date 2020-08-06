@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -93,7 +93,7 @@ class ActionRestaurantSearch(Action):
 				dispatcher.utter_message('No Restaurant found :( Please try again!')
 		else:
 			dispatcher.utter_message('FAILED.')
-		# dispatcher.utter_message(output)
+		
 		return []
 
 
